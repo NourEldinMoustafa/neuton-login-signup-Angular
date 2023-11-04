@@ -1,0 +1,49 @@
+<section class="login-block">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <form class="md-float-material form-material" (ngSubmit)="signInWithEmailPassword()" method="POST">
+          <div class="auth-box card">
+            <div class="card-block">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="text-center heading">Sign in to your account. </h3>
+                </div>
+              </div>
+
+              <div class="form-group form-primary">
+                <input type="text" class="form-control" name="email" [(ngModel)]="email" placeholder="Email" id="email">
+              </div>
+
+              <div class="form-group form-primary">
+                <input type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password" id="password">
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <input type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" name="submit" value="Sign in">
+                </div>
+              </div>
+
+              <div class="or-container">
+                <div class="line-separator"></div>
+                <div class="or-label">or</div>
+                <div class="line-separator"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" (click)="signInWithGoogle()">
+                    <img src="https://img.icons8.com/color/16/000000/google-logo.png"> Sign in Using Google
+                  </a>
+                </div>
+              </div>
+              <br>
+              <p class="text-inverse text-center">you Don't have an account? <a routerLink="/signup" class="text-inverse" data-abc="true">sign up</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
