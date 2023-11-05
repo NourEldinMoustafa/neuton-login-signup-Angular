@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import firebase from 'firebase/compat/app';
 import { Router } from '@angular/router';
-
+import { ApiService } from '../services/api.service'; //  the path to the ApiService
 
 @Component({
   selector: 'app-login',
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   email: string = '';
   password: string = '';
-  constructor(private afAuth: AngularFireAuth, private router: Router) {}
+  constructor(private afAuth: AngularFireAuth, private router: Router,private apiService: ApiService) {}
 
   signInWithGoogle() {
     this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider())

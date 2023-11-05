@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import firebase from 'firebase/compat/app';
-
+import { ApiService } from '../services/api.service'; //  the path to the ApiService
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -11,7 +11,7 @@ export class SignupComponent {
   displayName: string = '';
   email: string = '';
   password: string = '';
-  constructor(private afAuth: AngularFireAuth) {}
+  constructor(private afAuth: AngularFireAuth, private apiService: ApiService) {}
 
   signInWithGoogle() {
     this.afAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
