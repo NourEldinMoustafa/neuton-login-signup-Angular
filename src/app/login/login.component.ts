@@ -52,6 +52,7 @@ export class LoginComponent {
         const errorMessage = error.message;
         console.error(errorMessage);
       });
+      
   }
 
 }

@@ -121,3 +121,11 @@ font-size: 21px;
   margin: 0 15px;
   text-align: center;
 }
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
+  display: inline-block;
+  width: auto;
+}

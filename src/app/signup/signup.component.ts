@@ -8,7 +8,7 @@ import { ApiService } from '../services/api.service'; //  the path to the ApiSer
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent {
-  displayName: string = '';
+  userName: string = '';
   email: string = '';
   password: string = '';
   constructor(private afAuth: AngularFireAuth, private apiService: ApiService) {}
