@@ -4,7 +4,9 @@ $secondary-color: #FFFFFF; // White color
 
 body {
   font-family: Arial, sans-serif;
-  background: #1842b6;
+  // background: #1842b6;
+  // background-image: linear-gradient(184.78deg, #fa709a 7.64%, #40fefe 120.07%);
+  background-image: linear-gradient(84.78deg,#40fefe 7.64%, #1842b6 120.07%);
   color: $primary-color;
 }
 
